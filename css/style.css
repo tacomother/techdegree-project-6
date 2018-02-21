@@ -1,0 +1,67 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400';
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  font-size: .9em;
+  line-height: 1.7em;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  margin-bottom: 26px;
+}
+
+.captionWrapper {
+    padding: 0 20px;
+}
+
+.captionWrapper span {
+  cursor: pointer;
+}
+
+.mejs__player {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+/* Highlight captions */
+.active {
+  color: orange;
+}
+
+
+/* Media query */
+@media (min-width: 768px) {
+  body {
+    padding-top: 50px;
+    font-size: 1em;
+    line-height: 2em;
+  }
+  .wrapper {
+    max-width: 854px;
+    margin: auto;
+    padding: 30px;
+  }
+  .captionWrapper {
+    padding: 0;
+  }
+  .mejs__player {
+    height: 440px;
+  }
+}
+
+
+/* control panel customize */
+
+.mejs__inner .mejs__controls {
+  background-color: coral;
+}
